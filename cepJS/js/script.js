@@ -29,14 +29,12 @@ const pesquisarCep = async() => {
         if(endereco.hasOwnProperty('erro')){
             alert('Endereço não encontrado. Por favor, digite um CEP válido!')
             document.getElementById('cep').value = ""
-            document.getElementById('cep').focus()
         } else {
             preencherFormulario(endereco)
         }
     } else {
         alert('Digite um CEP válido.')
         document.getElementById('cep').value = ""
-        document.getElementById('cep').focus()
     }
 }
 
