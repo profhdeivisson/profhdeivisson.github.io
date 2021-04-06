@@ -44,6 +44,18 @@
         #stop{
             background-color: darkred;
         }
+        footer{
+            display: flex;
+            justify-content: center;
+            margin-top: 20%;
+        }
+        a{
+            color: darkturquoise;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +65,10 @@
         <button id="start" onclick="start()">INICIAR</button>
         <button id="pause" onclick="pause()">PAUSE</button>
         <button id="stop" onclick="parar()">PARAR</button>
+        <footer>Desenvolvido por <a href="https://github.com/profhdeivisson">Deivisson Henrique</a> | <a href="https://tudoinforj.com.br">TudoInfoRJ</a></footer>
     </div>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
