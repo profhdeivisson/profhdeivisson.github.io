@@ -9,9 +9,11 @@ var cron
 
 function start(){
     cron = setInterval(() => {timer()}, tempo)
+    document.getElementById('start').disabled = true
 }
 function pause(){
     clearInterval(cron)
+    document.getElementById('start').disabled = false
 }
 function parar(){
     clearInterval(cron)
@@ -19,6 +21,7 @@ function parar(){
     m = 0
     s = 0
     document.getElementById('cont').innerText = '00:00:00'
+    document.getElementById('start').disabled = false
 }
 function timer(){
     s++
