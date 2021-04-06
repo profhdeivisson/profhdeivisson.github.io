@@ -1,1 +1,59 @@
-
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>IMC - Índice de Massa Corporal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="titulo">IMC = peso / (altura)²</div>
+    <form id="formulario">
+        <fieldset>
+        <legend>Cálculo do IMC</legend>
+            
+            <label for="kilos">Kilos:</label>
+            <input type="text" name="kilos" />
+            <br>
+            <label for="metros">Metros:</label>
+            <input type="text" name="metros" />
+            <br>
+            <label for="centimetros">Cm:</label>
+            <input type="text" name="centimetros" />
+            <br>
+            <label for="imc">IMC:</label>
+            <input type="text" name="imc" disabled="disabled" />
+            <br>
+            <a href="#" onclick="calcularIMC();">Calcular</a>
+            <br>
+            <input type="text" name="resultado" placeholder="Classificação" disabled="disabled" style="width: 100%; margin-top: 15px; height: 25px;" >
+        </fieldset>
+    </form>
+    <table border="1px">
+    <tr>
+    <td style="font-weight: bold;">IMC</td>    <td style="font-weight: bold;">Classificação</td>
+    </tr>
+    <tr>
+    <td>&lt; 20</td>    <td>Abaixo do peso</td>
+    </tr>
+    <tr>
+    <td>20 a 25</td>    <td>Peso Ideal</td>
+    </tr>
+    <tr>
+    <td>25 a 30</td>    <td>Sobrepeso</td>
+    </tr>
+    <tr>
+    <td>30 a 35</td>    <td>Obesidade Moderada</td>
+    </tr>
+    <tr>
+    <td>35 a 40</td>    <td>Obesidade Severa</td>
+    </tr>
+    <tr>
+    <td>40 a 50</td>    <td>Obesidade Mórbida</td>
+    </tr>
+    <tr>
+    <td>> 50</td>    <td>Super Obesidade</td>
+    </tr>
+    </table>
+</body>
+</html>

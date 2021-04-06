@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    font-family: sans-serif;
+    font-size: 50px;
+    color: #fff;
+    background-color: darkslategray;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+#formulario{
+    width: 320px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin: 1em;
+}
+#formulario fieldset{
+    padding: 20px;
+}
+#formulario fieldset label{
+    display: block;
+    float: left;
+}
+#formulario fieldset input{
+    float: right;
+    display: block;
+    width: 180px;
+    margin: 3px 0;
+}
+table{
+    margin-left: 1.2em;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em;
+}
