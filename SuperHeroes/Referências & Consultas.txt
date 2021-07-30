@@ -1,0 +1,7 @@
+superhero-api: https://akabab.github.io/superhero-api/api/#alljson ou https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json
+
+
+Projeto semelhante
+- https://github.com/WahidX/superheroapp/blob/master/scripts/index.js
+
+- https://wahidx.github.io/superheroapp/pages/index.html

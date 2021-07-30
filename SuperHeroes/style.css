@@ -1,0 +1,225 @@
+body {
+  background-color: #292929;
+}
+* {
+  font-family: "Iceland", cursive;
+  padding: 0;
+  margin: 0;
+}
+header {
+  background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(64,64,64,1) 100%);
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 3vw;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header h1 a{
+  font-family: "Luckiest Guy", cursive;
+  font-size: 50px;
+  color: #ffff00;
+  text-decoration: none;
+}
+header h1 a:hover{
+    color: rgb(255, 238, 0);
+  }
+#filtroHeroi {
+  width: 30vw;
+  height: 25px;
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  background: none;
+  color: white;
+}
+::placeholder {
+  color: white;
+  font-size: 16px;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7vw 3vw;
+  justify-content: center;
+}
+article {
+  border: 1px solid;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
+  justify-content: space-around;
+  display: flex;
+}
+article h3 {
+  flex-wrap: wrap;
+  font-size: 25px;
+  padding: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content div h1 {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+#details_btn {
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  max-width: 100%;
+}
+
+#details_btn:hover {
+  background-color: red;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+}
+
+#dataContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+#image {
+  margin-right: 5vw;
+  margin-block-start: 1.5em;
+}
+#statsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+#detailContainer {
+  width: 80%;
+}
+#statsItem {
+  padding: 20px;
+  width: 80%;
+  display: flex;
+}
+#powerstats {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+#name-stats {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding-right: 20px;
+}
+#name-stats span {
+  margin-bottom: 2px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+#bars-stats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#bars-stats span {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2px;
+  padding: 5px;
+}
+@media (max-width: 414px) {
+  header h1 {
+    font-size: 20px;
+  }
+  #filtroHeroi {
+    width: 40vw;
+  }
+  section {
+  padding: 20vw 3vw;
+  }
+  .modal{
+    padding-top: 2vw;
+  }
+  .modal-content{
+    margin-bottom: 110px;
+  }
+  #dataContainer{
+    flex-direction: column;
+  }
+  #statsItem{
+    padding: 0;
+    width: 100%;
+  }
+  #detailContainer{
+    width: 100%;
+  }
+}
+@media (max-width: 414px) {
+  header h1 {
+    font-size: 20px;
+  }
+  #filtroHeroi {
+    width: 40vw;
+  }
+  section {
+  padding: 20vw 3vw;
+  }
+}
