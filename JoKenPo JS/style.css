@@ -1,0 +1,58 @@
+section div div h2 a{
+  color: white;
+}
+section div div h2 a:hover{
+  color: yellow;
+  text-decoration: none;
+}
+button {
+  background-color: white;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+.pontuacao {
+  font-size: 3vh;
+}
+.campo-resultado {
+  height: 60vh;
+}
+.btn-escolha{
+  font-size: 20px;
+}
+.btn-escolha:focus {
+  background-color: aquamarine;
+  padding: 17px;
+}
+#resultado {
+  font-size: 7vh;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 321px) {
+  .campo-resultado {
+    height: 40vh;
+  }
+  button {
+    padding: 10px;
+  }
+  .btn-escolha{
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  .campo-resultado {
+    height: 35vh;
+  }
+  button {
+    padding: 10px;
+  }
+  .btn-escolha{
+    font-size: 16px;
+  }
+  .pontuacao {
+    font-size: 5vh;
+  }
+}

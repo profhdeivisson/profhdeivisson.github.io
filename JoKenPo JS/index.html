@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <title>JoKenPo 2.0</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <div class="row bg-dark">
+            <div class="col-lg col-sm-2 col-2">
+                <h2 class="text-white align-item-center"><a href="index.html">JoKenPo2.0</a></h2>
+            </div>
+            <div class="offset-lg offset-sm-7 offset-5">
+                <button id="reset" onclick="reset()">Resetar Jogo</button>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-3 pb-3 pontuacao">
+            <span class="p-2">Você</span>
+            <span id="ptsUsuario" class="badge badge-secondary p-2">0</span>
+            <span class="p-2">X</span>
+            <span id="ptsPc" class="badge badge-secondary p-2">0</span>
+            <span class="p-2">PC</span>
+        </div>
+        <div class="row col-md-3 col-7 badge badge-secondary">
+            <h4>Resultado atual:</h4>
+        </div>
+        <div class="row justify-content-center align-items-center campo-resultado">
+            <span id="resultado"></span>
+        </div>
+        <div class="row align-items-end justify-content-center">
+            <div>Escolha pedra, papel ou tesoura</div>
+        </div>
+        <div class="row align-items-end justify-content-center">
+            <button class="btn-escolha" onclick="escolha(this)" value="pedra">✊ Pedra</button>
+            <button class="btn-escolha" onclick="escolha(this)" value="papel">✋ Papel</button>
+            <button class="btn-escolha" onclick="escolha(this)" value="tesoura">✌ Tesoura</button>
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
