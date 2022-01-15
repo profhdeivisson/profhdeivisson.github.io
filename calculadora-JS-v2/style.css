@@ -1,0 +1,113 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(https://guiadobitcoin.com.br/wp-content/uploads/2020/06/fatos-matem%C3%A1ticos-guia-do-bitcoin.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.titulo{
+    color: #fff;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: rgb(34, 34, 34) 1px 1px 10px;
+    margin-bottom: 20px;
+}
+#calculadora{
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 100px;
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(64,64,64,1) 100%);
+}
+#visor{
+    width: 94%;
+    height: 80px;
+    margin: 5px;
+    padding: 4px;
+    text-align: right;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 40px;
+    background-color: rgb(37, 37, 37);
+}
+.botao{
+    margin: 5px;
+    width: 62px;
+    height: 50px;
+    background: rgb(18,18,18);
+    border: none;
+    color: rgb(224, 224, 224);
+    font-size: 20px;
+    cursor: pointer;
+}
+.zero{
+    width: 138px;
+}
+.enter{
+    background: hsl(19, 100%, 48%);
+    color: black;
+}
+.operacao{
+    background: hsl(204, 100%, 53%);
+    color: black;
+
+}
+.ac{
+    background: hsl(167, 100%, 80%);
+    color: black;
+
+}
+footer a{
+    color: white;
+    font-family: sans-serif;
+    text-shadow: rgb(34, 34, 34) 1px 1px 10px;
+}
