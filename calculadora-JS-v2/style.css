@@ -113,7 +113,9 @@ footer a{
 }
 
 @media (max-width: 600px){
-    
+    .botao{
+        margin: 4px;
+    }
     .titulo{
     font-size: 25px;
     margin: 100px 0 50px 0;
