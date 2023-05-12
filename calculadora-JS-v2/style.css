@@ -41,16 +41,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.box{
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100vh;
-    background: url(https://guiadobitcoin.com.br/wp-content/uploads/2020/06/fatos-matem%C3%A1ticos-guia-do-bitcoin.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url(./imagens/background.jpg) fixed;
+    background-size: cover;
 }
 .titulo{
     color: #fff;
@@ -58,7 +55,7 @@ table {
     font-family: sans-serif;
     font-weight: bold;
     text-shadow: rgb(34, 34, 34) 1px 1px 10px;
-    margin-bottom: 20px;
+    margin: 80px 0 80px 0;
 }
 #calculadora{
     width: 300px;
@@ -106,8 +103,23 @@ table {
     color: black;
 
 }
+footer{
+    margin-bottom: 50px;
+}
 footer a{
     color: white;
     font-family: sans-serif;
     text-shadow: rgb(34, 34, 34) 1px 1px 10px;
+}
+
+@media (max-width: 600px){
+    
+    .titulo{
+    font-size: 25px;
+    margin: 100px 0 50px 0;
+    }
+    .footer{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
