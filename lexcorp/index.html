@@ -1,0 +1,291 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-[#111318] dark group/design-root overflow-x-hidden"
+      style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); --select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(157,166,184)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e'); font-family: Inter, &quot;Noto Sans&quot;, sans-serif;"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#292e38] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">LexCorp</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">About</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Practice Areas</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Team</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Success Stories</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#134ab9] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Schedule a Strategic Consultation</span>
+              </button>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#292e38] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Legal Emergency</span>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#292e38] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-white" data-icon="Phone" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjI6haSplWJdozNg4Gjj7who5fWohiXj_gYEg4LmWAhYplSPmJ_3_HQMqb3772sfZ_XNU5uUa-Gh34_vlgCqUyer4m4pCBD6g4aOBjdFe81YmMK-gNf_sQLId4tACQzA5my9msPXDcsO0Q2Pc98mfgoLO2hslffFUpjD2MYMsX7i2PkF9vHrNhen_EjXPNd2exY7xcPe8Wog5QB6AB1NgVvKlGjzmehu09Fxwk9InE7CvJ28Qqb59_7axknKs986ZN9ckd1kSR6Cqc");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Protecting Your Assets, Building Your Legal Future
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Specialized legal advice for businesses, focusing on results and customized strategies.
+                    </h2>
+                  </div>
+                  <div class="flex-wrap gap-3 flex">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#134ab9] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    >
+                      <span class="truncate">Talk to an Expert</span>
+                    </button>
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#292e38] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                    >
+                      <span class="truncate">Explore Our Cases</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-4 p-4">
+              <div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 bg-[#292e38]">
+                <p class="text-white text-base font-medium leading-normal">Transactions Advised</p>
+                <p class="text-white tracking-light text-2xl font-bold leading-tight">Over $2.8 billion</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Areas of Expertise</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDzF4UwvBpiIQPSXDG9L5Cuo9puYJmpb7wNKOEU6ihNmdKRHR7f137SZA1TkYhfAUvZTa0xXrkttPPFZNXUKMMxZFmcSL7RmIau6Aw-CTAnGh4v7ZvNWLObwUOrWScUEAvI1A2CzfIN9_TEwkekqb6yZn4oCXp-CdNLh48f5u3NNqit3Bzxmy0AXc9NtCxkBCfhY4-voGRvw1GsNe4iflj__V4rqjKvG7XNbrg2l0uUzWGhFjOKPe5yPRUTrkV7uSlz-5mn_t8bRtne");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Corporate Law &amp; M&amp;A</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbgPeTsFlNx756ZY1jrDvIlXfcIG4YszrI8Rs-bfs4YAUqTUj4cJ8XZamsVFVkYS8FA1-ryh6z4TAdCd6KJ1q-l11QWHyU6v0Wi3kcQl0qFo8-jHS6xOSGoOQGZDBvPas5Nl51gGGbdBwBx1s2DQE6yCPePuWo4fFdMHh6OJgl9PGChcnEqNJ7iQl7WSIxP7TdRs135eos3YJkR4im1qy-xM7S7paurpOXvuuZP4n9a4csWcb88duKv1M9NwjhcRjLIHZT8nZo8SYf");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Contracts &amp; Complex Negotiations</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5iylilh42U5SXDsQRbrNskJKjmYzq_lUYA-6sHvaMYYQxBV54tz805nIP_tgQv1fD5vBkA_OoZ4FL-0eejhb3dkCdRKnlgfXX_p_xPAZTWZpOpjd7NSDnGzbycA_grLKm0BntIpEMLUe0iSGoy4ZuNWPV_1pko1z2RfR6Pn1r8SSmDeW0n1CmOsisiYt0AXb-WAtz-OsiGW_xEGZVf6sMMOXfFEOw--IgNrY9U1NaRhrk49kKgv54ti2xJMu3KQ-foB8iDiKpsSx0");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Compliance &amp; Risk Management</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Competitive Advantages</h2>
+            <div class="flex items-center gap-4 bg-[#111318] px-4 min-h-14">
+              <div class="text-white flex items-center justify-center rounded-lg bg-[#292e38] shrink-0 size-10" data-icon="Check" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                </svg>
+              </div>
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Highly qualified and specialized team</p>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111318] px-4 min-h-14">
+              <div class="text-white flex items-center justify-center rounded-lg bg-[#292e38] shrink-0 size-10" data-icon="Check" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                </svg>
+              </div>
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Strategic and personalized approach</p>
+            </div>
+            <div class="flex items-center gap-4 bg-[#111318] px-4 min-h-14">
+              <div class="text-white flex items-center justify-center rounded-lg bg-[#292e38] shrink-0 size-10" data-icon="Check" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+                </svg>
+              </div>
+              <p class="text-white text-base font-normal leading-normal flex-1 truncate">Focus on results and innovative solutions</p>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Partners Team</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUVhRoiJF5GmezkorqucpF_w1m5WmX6-yQ9NWT04PYYBy2K9tDLesEcQmGIQQLRUKkemdy7Vttgf1i782N0f2Nq2usgnJM6-F3MHwgN0m7imZmV9mPkf87pSiLJVDGRmxFWS9L8qwkVYJ9y1-jTmsn2ifiZiHXGrVwq25eFqHztdmixHS-gk5iwkKz_uuTsrET4Fi57Jv4NwnPNMwwBJKL0dKgY8HlkXG28D_7RSpIM8CPtc0K1ssPAArNEHJ1Wvvs6KxzykJgcYad");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Dr. Ethan Carter</p>
+                    <p class="text-[#9da6b8] text-sm font-normal leading-normal">Founding Partner, 20+ years of experience</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDm_uN6GpdpNv-HMdzQ3_R8i8fuuQD1CsM4S8uL8ENogPIyjf1LqCPpdH6dKvRfcC93g-boHOya3tNGimWSgZwdK1EiJk6oeDybhoQHPDCKcgb7IuEMrjFuu4P5EIM5uGpcMSAaEpLHRIn5YyEUH0MdbQEEYlfj2hBTE9lOZw4HrACxn3lzOIZHgxRRnjP7EaJ1nWazMGB9i_7WLcX-T4DmZL607zSurESk0Ogesu-etFsgAlk7wfWz3hvQelaGOQABUyQ_f0dPXTp_");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Dr. Olivia Bennett</p>
+                    <p class="text-[#9da6b8] text-sm font-normal leading-normal">Partner, M&amp;A Specialist</p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgpxJJvda93mXfxosjGkuz4bfCpvBFyMhq91zqE38ddXHmo2qVXWJu_P2839T_Io6yXOaBkD1Bt3OQYM9PydYxnsgoALBpKvZO6JcgKkSeLQ8OFPS1fVlfO-Q2vU67s_-rF_JW9qaEe-pu2PaWfBKfV-BTZYspRz7JwATCve_XxRN_fMKaxAcbZUeP7-13uhY-ggDZUqP2wtFYdkFLjpf0i2vxngu7QbRQEwTQxne23hPJ_boamnaukypSF2DV2c5oULKWGGzBRlx1");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Dr. Noah Parker</p>
+                    <p class="text-[#9da6b8] text-sm font-normal leading-normal">Partner, Compliance Specialist</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Strategic Contact Form</h2>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Full Name</p>
+                <input
+                  placeholder="Enter your name"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3c4453] bg-[#1c1f26] focus:border-[#3c4453] h-14 placeholder:text-[#9da6b8] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Email</p>
+                <input
+                  placeholder="Enter your email"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3c4453] bg-[#1c1f26] focus:border-[#3c4453] h-14 placeholder:text-[#9da6b8] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Phone</p>
+                <input
+                  placeholder="Enter your phone"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3c4453] bg-[#1c1f26] focus:border-[#3c4453] h-14 placeholder:text-[#9da6b8] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Area of Interest</p>
+                <select
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3c4453] bg-[#1c1f26] focus:border-[#3c4453] h-14 bg-[image:--select-button-svg] placeholder:text-[#9da6b8] p-[15px] text-base font-normal leading-normal"
+                >
+                  <option value="one">Select an area</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                </select>
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Message</p>
+                <textarea
+                  placeholder="Briefly describe your request"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3c4453] bg-[#1c1f26] focus:border-[#3c4453] min-h-36 placeholder:text-[#9da6b8] p-[15px] text-base font-normal leading-normal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="px-4">
+              <label class="flex gap-x-3 py-3 flex-row">
+                <input
+                  type="checkbox"
+                  class="h-5 w-5 rounded border-[#3c4453] border-2 bg-transparent text-[#134ab9] checked:bg-[#134ab9] checked:border-[#134ab9] checked:bg-[image:--checkbox-tick-svg] focus:ring-0 focus:ring-offset-0 focus:border-[#3c4453] focus:outline-none"
+                />
+                <p class="text-white text-base font-normal leading-normal">I agree with the Privacy Policy and Terms of Use</p>
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#134ab9] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Send</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#9da6b8] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#9da6b8] text-base font-normal leading-normal min-w-40" href="#">Terms of Use</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#9da6b8]" data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#9da6b8] text-base font-normal leading-normal">© 2024 LexCorp. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

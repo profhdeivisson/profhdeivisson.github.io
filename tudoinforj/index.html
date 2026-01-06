@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>tudoinforj - Desenvolvimento de Sites Profissionais</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#5b13ec",
+                        "whatsapp": "#25D366",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#161022",
+                        "card-dark": "#1f1c27", 
+                        "border-dark": "#2e2839",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-display overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-solid border-[#e5e7eb] dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 py-4 lg:px-40">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">tudoinforj</h2>
+</div>
+<div class="hidden lg:flex items-center gap-9">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#servicos">Serviços</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#portfolio">Portfólio</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contato">Contato</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-whatsapp text-white text-sm font-bold shadow-lg shadow-green-500/20 hover:bg-green-500 transition-all">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                        WhatsApp
+                    </span>
+</button>
+<button class="lg:hidden p-2 text-2xl">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col">
+<section class="relative px-6 py-12 lg:px-40 lg:py-20 flex justify-center">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="@container">
+<div class="flex flex-col gap-8 px-4 py-6 @[480px]:gap-12 @[864px]:flex-row items-center">
+<div class="flex flex-col gap-6 flex-1 @[480px]:gap-8 text-center @[864px]:text-left">
+<div class="flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 self-center @[864px]:self-start rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary border border-primary/20">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                                        Agenda aberta para novos projetos
+                                    </div>
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-[#111418] to-gray-600 dark:from-white dark:via-white dark:to-gray-500">
+                                        Transformando Ideias em Realidade Digital
+                                    </h1>
+<h2 class="text-base font-normal leading-relaxed text-gray-500 dark:text-gray-400 @[480px]:text-lg">
+                                        Somos a <span class="text-primary font-bold">tudoinforj</span>. Especialistas em <span class="text-primary font-semibold">React.js</span>, <span class="text-primary font-semibold">Next.js</span> e <span class="text-primary font-semibold">WordPress</span> (Elementor/Headless). Criamos sites modernos e rápidos que convertem visitantes em clientes.
+                                    </h2>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 justify-center @[864px]:justify-start">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg shadow-primary/25 hover:shadow-primary/40 transition-all hover:-translate-y-0.5">
+<span class="truncate">Solicitar Orçamento</span>
+</button>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-transparent border border-[#e5e7eb] dark:border-border-dark hover:bg-black/5 dark:hover:bg-white/5 text-base font-medium transition-colors">
+<span class="truncate">Ver Projetos</span>
+</button>
+</div>
+</div>
+<div class="w-full flex-1 aspect-square max-w-[500px] relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative w-full h-full bg-center bg-no-repeat bg-cover rounded-xl shadow-2xl border border-[#e5e7eb] dark:border-border-dark overflow-hidden" data-alt="Abstract 3d purple digital wave background representing code and technology" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtj5hD9Rwtiip2mNG0tdJ7hi72yCYirm0dQyDKkTwDgp3EbEvo0fRxn9tg13I7AvETCZJtgSN4PkZnIws1q81wg_9P1SOG_5b7H2kbFNWrJrmG02S8LFpgXrEHeqBH4HN3VjEnYItjzsHKMCJQMk2Bt5ieWWLog8yyc1tf6WeoI3vNkLuue4v7SxelAOVChpVH8XQ8o5nJdVsfLFV-i_oqoDaAEPAOWL5MmTe-7fM-niFIUNfZn2RCWPsSxkiNUqfC5_gyWrrnnUPu");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 p-4 bg-background-light/10 dark:bg-black/30 backdrop-blur-md rounded-lg border border-white/10">
+<div class="flex items-center gap-3 text-sm font-mono text-white/90">
+<span class="material-symbols-outlined text-green-400 text-[18px]">check_circle</span>
+<span>Código Otimizado</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="w-full overflow-hidden bg-background-light dark:bg-[#130d1d] py-8 border-y border-[#e5e7eb] dark:border-border-dark">
+<div class="px-6 lg:px-40 flex justify-center">
+<div class="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+<div class="flex items-center gap-2 text-xl font-bold"><span class="material-symbols-outlined">code</span> React</div>
+<div class="flex items-center gap-2 text-xl font-bold"><span class="material-symbols-outlined">javascript</span> Next.js</div>
+<div class="flex items-center gap-2 text-xl font-bold"><span class="material-symbols-outlined">view_quilt</span> WordPress</div>
+<div class="flex items-center gap-2 text-xl font-bold"><span class="material-symbols-outlined">css</span> Tailwind</div>
+<div class="flex items-center gap-2 text-xl font-bold"><span class="material-symbols-outlined">database</span> Node.js</div>
+</div>
+</div>
+</div>
+<section class="px-6 py-16 lg:px-40 flex justify-center bg-background-light dark:bg-background-dark" id="servicos">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col gap-10 px-4">
+<div class="flex flex-col gap-4 text-center items-center">
+<h2 class="text-3xl font-bold leading-tight tracking-tight lg:text-4xl max-w-[720px]">
+                                Soluções Especializadas
+                            </h2>
+<p class="text-gray-500 dark:text-gray-400 text-base max-w-[600px]">
+                                Entregamos soluções web de alto desempenho personalizadas para suas necessidades, com foco em velocidade, segurança e escalabilidade.
+                            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="group flex flex-col gap-4 rounded-xl border border-[#e5e7eb] dark:border-border-dark bg-white dark:bg-card-dark p-6 hover:border-primary/50 transition-colors shadow-sm">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold">Desenvolvimento Sob Medida</h3>
+<p class="text-gray-500 dark:text-[#a69db9] text-sm leading-relaxed">
+                                        Aplicações web escaláveis construídas com <strong>React &amp; Next.js</strong>. Perfeito para SaaS, dashboards e plataformas interativas que exigem alta performance.
+                                    </p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-[#e5e7eb] dark:border-border-dark bg-white dark:bg-card-dark p-6 hover:border-primary/50 transition-colors shadow-sm">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">web</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold">Soluções em WordPress</h3>
+<p class="text-gray-500 dark:text-[#a69db9] text-sm leading-relaxed">
+                                        Sites flexíveis utilizando <strong>Elementor Pro</strong> para facilidade de gestão ou arquitetura <strong>Headless</strong> para performance máxima e segurança.
+                                    </p>
+</div>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-[#e5e7eb] dark:border-border-dark bg-white dark:bg-card-dark p-6 hover:border-primary/50 transition-colors shadow-sm">
+<div class="size-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">rocket_launch</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-lg font-bold">Otimização e SEO</h3>
+<p class="text-gray-500 dark:text-[#a69db9] text-sm leading-relaxed">
+                                        Auditoria técnica e otimização de velocidade (Core Web Vitals) para garantir que seu site ranqueie melhor no Google e retenha usuários.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-16 lg:px-40 flex justify-center bg-white dark:bg-[#130d1d] border-y border-[#e5e7eb] dark:border-border-dark" id="portfolio">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex items-center justify-between px-4 pb-8 pt-5">
+<h2 class="text-2xl font-bold leading-tight tracking-[-0.015em]">Projetos Recentes</h2>
+<a class="text-primary text-sm font-medium hover:underline flex items-center gap-1" href="#">
+                            Ver todos <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<div class="flex overflow-x-auto pb-6 -mx-4 px-4 scrollbar-hide gap-6 snap-x">
+<div class="snap-center shrink-0 w-[300px] flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-[4/3] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern dark dashboard interface for financial analytics" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxhNOFk-jE7irdxVj9Cwrku30U4p6mUifXBZCQNRQQJLgVf0dAM2PB7S1NPf5jaMMhKYU5V0yOYpIRCJC7Q3xaWBC9QX2GoHjvJVoXcNVwKu8UNhYk599d9OWe3syZR0jxddN_NaojKBPeh9u3t9sfDqyzNlsSECqsQiHDtPJVNJlQeISntrH5Figt7X2D9dPXHFoUN8QGCyrYGsdqoPJONsXjCwS_qiuwzf7yyh6SwbeZT-09vRz5JKuDrbdyedlN3OMgk8J4FzQT");'></div>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-black px-4 py-2 rounded-full text-sm font-bold">Ver Case</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-bold text-lg group-hover:text-primary transition-colors">Dashboard Financeiro</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Next.js • Tailwind • Recharts</p>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[300px] flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-[4/3] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vibrant e-commerce landing page with product grid" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQzJe-tPQ6Ff8I5qcgSBI1FX1A_JF2nvPx2uBA-ZKhxROKFzhM-GgneZR-nnK3JHbDgxbwfmb5q7joYFMf6RUJgzEqMTw4VCn_g_M0HE2Ob4UvhTHI-48DxK8q9ai5vx4cWV46T0azQEAmNIuLdnMaZaPnYg2RQXDMhDVWOZ1q7drUWKgSn2pkHIA2VF1UVNviKA8tSi2_U0PLiZiKIIXgFr_1X2KGpgt0TaFN6uXuAE1F0NgKom-DjU2Fp40JOnfbTy3q6S6JahOd");'></div>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-black px-4 py-2 rounded-full text-sm font-bold">Ver Case</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-bold text-lg group-hover:text-primary transition-colors">E-Commerce de Moda</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">WordPress • WooCommerce • Tema Custom</p>
+</div>
+</div>
+<div class="snap-center shrink-0 w-[300px] flex flex-col gap-3 group cursor-pointer">
+<div class="w-full aspect-[4/3] bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Clean corporate website mockup on laptop screen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJJ17qbWpZIZcj2O3PR2zyt8-kKx_zh-_i-g7haA0X5XsY5QhnNGXfVKWrOkB_KMd_MfCZ6bqVDH1jssoIZoC765qOBv2a3kGt5yo8EHm5P8wmAjahqJWzDLMHbzTWS6VDVhVMW_5WwWRoPiTDGfXJSUYAQP_TSfuW4Sapv0C-VbIH61x6jYICzu1e2lpjBSJXucov-xnBuBNElqd04lkuboEkHdkiGCakHtGBWjdIkZzzCG7FBH_5qdc-Gc8O3NuYdnwC-a5ZmN1R");'></div>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-black px-4 py-2 rounded-full text-sm font-bold">Ver Case</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-bold text-lg group-hover:text-primary transition-colors">Portfólio Corporativo</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">React • Framer Motion</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-6 py-20 lg:px-40 flex justify-center bg-background-light dark:bg-background-dark relative overflow-hidden" id="contato">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="layout-content-container flex flex-col items-center text-center max-w-[720px] flex-1 z-10 gap-8">
+<h2 class="text-3xl md:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-[#111418] to-gray-600 dark:from-white dark:to-gray-500">
+                        Pronto para tirar seu projeto do papel?
+                    </h2>
+<p class="text-lg text-gray-500 dark:text-gray-300">
+                        Seja para uma reformulação completa do site ou implementação de uma nova funcionalidade, a <strong>tudoinforj</strong> está aqui para ajudar.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+<button class="flex items-center justify-center gap-2 rounded-lg h-14 px-8 bg-whatsapp hover:bg-green-500 text-white text-lg font-bold shadow-xl shadow-green-900/10 dark:shadow-green-500/10 transition-all hover:scale-105">
+<span class="material-symbols-outlined">chat</span>
+                            Conversar no WhatsApp
+                        </button>
+<button class="flex items-center justify-center gap-2 rounded-lg h-14 px-8 bg-white dark:bg-card-dark border border-[#e5e7eb] dark:border-border-dark text-[#111418] dark:text-white text-lg font-bold shadow-sm hover:bg-gray-50 dark:hover:bg-[#2a2635] transition-all">
+<span class="material-symbols-outlined">mail</span>
+                            Enviar E-mail
+                        </button>
+</div>
+</div>
+</section>
+<footer class="border-t border-[#e5e7eb] dark:border-border-dark bg-white dark:bg-[#0f0c14] py-12 px-6 lg:px-40">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col gap-2 text-center md:text-left">
+<h3 class="text-xl font-bold tracking-tight">tudoinforj</h3>
+<p class="text-sm text-gray-500">© 2023 tudoinforj. Todos os direitos reservados.</p>
+</div>
+<div class="flex gap-6">
+<a class="text-gray-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">code</span></a> 
+<a class="text-gray-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">work</span></a> 
+<a class="text-gray-500 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</footer>
+</main>
+<a aria-label="Contato via WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center justify-center size-14 rounded-full bg-whatsapp text-white shadow-2xl hover:bg-green-500 hover:scale-110 transition-all animate-bounce-slow border-2 border-white/20" href="#">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+</a>
+</div>
+
+</body></html>
